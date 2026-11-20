@@ -1,6 +1,16 @@
-# Ssempala Harrison Solomon — Portfolio v4
+# Ssempala Harrison Solomon, Portfolio v5
 
-A responsive personal portfolio built with React, Vite, Tailwind CSS v4, and Lucide icons. It uses a custom editorial hero artwork, warm paper tones, coral and lavender accents, and a compact project showcase.
+A responsive personal portfolio built with React, Vite, Three.js, and Lucide icons. A dark stage with a 3D sensor grid hero, a floating nav, a pinned scroll story, a phone product view, a filterable project list, and a globe footer centred on Kampala.
+
+## Structure
+
+- `src/data.js`: projects, capabilities, story chapters, and contact details. Edit content here.
+- `src/three/sensorGrid.js`: the hero scene (a grid of points moved by a vertex shader).
+- `src/three/globe.js`: the footer globe.
+- `src/components/`: one file per section (Hero, Story, Product, Work, About, Contact) plus FloatingNav, CursorRing, and Reveal.
+- `src/styles.css`: all styling, with colours and fonts defined as variables at the top.
+
+The 3D code loads on demand, so the text appears before Three.js arrives. If WebGL is unavailable the page still works without the 3D scenes.
 
 ## Run locally
 
@@ -31,8 +41,8 @@ npm run preview
 
 ## Images
 
-- `public/harrison-editorial.webp` — editorial hero artwork.
-- `public/harrison-original.webp` — original portrait used in the about section.
+- `public/harrison-portrait.webp`: portrait used in the about section.
+- `public/harrison-editorial.webp`: social share image (Open Graph).
 
 ## Project accuracy
 
